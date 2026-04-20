@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular11Word-app:build"
+            "buildTarget": "angular11Word-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular11Word-app:build:production"
+              "buildTarget": "angular11Word-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular11Word-app:build"
+            "buildTarget": "angular11Word-app:build"
           }
         },
         "test": {
@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "angular11Word-app"
+  "defaultProject": "angular11Word-app",
+  "cli": {
+    "analytics": "3ef39004-6687-40c1-90b8-1b1eb2bc9d26"
+  }
 }
